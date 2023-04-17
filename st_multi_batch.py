@@ -282,7 +282,7 @@ if uploaded_files is not None:
         raise Exception ( 'please upload the right file ' )
 
     with st.spinner('Wait for preprocess and model training'):
-        st.info('Preporcesssing started ')
+        st.info('Preporcessing started ')
         data = data_reader(uploaded_files)
         new_joule = data['Joules'].values 
         st.success('Preprocessing complete !')
@@ -330,7 +330,7 @@ if uploaded_files is not None:
     DDDF = st.empty()
     Main = st.empty()
     # day_left, time_right = Main.columns(2)
-    pack_view, table_view, chart_view = st.tabs(["Battery Pack", "🗃Table", "📈 Charts"])
+    pack_view, table_view, chart_view = st.tabs(["Pack", "🗃Table", "📈 Charts"])
         # Example controlers
     
     if ms:
